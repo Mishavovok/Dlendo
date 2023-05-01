@@ -1,0 +1,54 @@
+.profile {
+  width: 240px;
+  border-radius: 5px;
+  background: #090b32;
+}
+
+.profile__user {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.profile__options {
+  margin-left: 85px;
+  display: flex;
+  align-items: center;
+}
+
+.profile__options-img {
+  width: 20px;
+  padding: 10px;
+  background: #19163f;
+  margin-right: 10px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.profile__user-name {
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+.profile__balance-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 25px;
+}
+
+.profile__balance__item-img {
+  width: 25px;
+}
+
+.profile__balance__item-balance {
+  margin-right: 40px;
+}
+
+.profile__balance__item-number {
+  margin-right: 7px;
+  color: #ffffff;
+}
+
+.profile__options-img-active {
+  background: #fa544d;
+}

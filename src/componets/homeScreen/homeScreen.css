@@ -1,0 +1,26 @@
+.homeScreen {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1fr;
+  gap: 10px 17px;
+  grid-template-areas:
+    'homeScreen__nav homeScreen__investors homeScreen__portfolio homeScreen__interest'
+    'homeScreen__nav homeScreen__deposit homeScreen__deposit homeScreen__deposit';
+}
+
+.homeScreen__nav {
+  grid-area: homeScreen__nav;
+}
+.homeScreen__investors {
+  grid-area: homeScreen__investors;
+}
+.homeScreen__portfolio {
+  grid-area: homeScreen__portfolio;
+}
+.homeScreen__interest {
+  grid-area: homeScreen__interest;
+}
+.homeScreen__deposit {
+  margin-right: 20px;
+  grid-area: homeScreen__deposit;
+}

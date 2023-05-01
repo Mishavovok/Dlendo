@@ -1,0 +1,44 @@
+
+.investors__title  {
+    margin: 20px 0 0 0 ;
+}
+
+.investors__text {
+    margin: 0 0 15px;
+}
+
+.investors__background {
+    width: 295px;
+    padding: 10px;
+    background: #19163f;
+    border: 1px solid #3D3F5E;
+}
+
+.investors__background-item {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.background__item-time {
+    display: flex;
+    color: #43fcff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #19163f;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #3D3F5E;
+}
+
+.background__item-time-text {
+    font-size: 10px;
+    padding: 0;
+    margin: 0 30px 0 0;
+}
+
+.background__item-time-number {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
