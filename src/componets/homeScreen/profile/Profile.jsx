@@ -3,7 +3,7 @@ import user from '/src/assets/user.png';
 import gear from '/src/assets/gear.png';
 import bell from '/src/assets/bell.png';
 import scales from '/src/assets/scales.png';
-import payment from '/src/assets/payment.png';
+import payment from '/src/assets/pending.png';
 import funded from '/src/assets/funded.png';
 import pending from '/src/assets/pending.png';
 import './profile.css';

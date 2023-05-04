@@ -31,10 +31,11 @@ const options = {
   scales: {
     x: {
       ticks: {
+        autoSkip: false,
         color: '#43fcff',
         font: {
-          size: 6.5,
-          weight: 200,
+          // size: 11,
+          // weight: 200,
         },
       },
     },

@@ -5,6 +5,8 @@ import './homeScreen.css';
 import Portfolio from './portfolio/Portfolio';
 import Interest from './interest/Interest';
 import Deposit from './deposit/Deposit';
+import Profitable from './profitable/Profitable';
+import News from './news/News';
 
 function HomeScreen() {
   return (
@@ -23,6 +25,11 @@ function HomeScreen() {
       </div>
       <div className="homeScreen__deposit">
         <Deposit />
+      </div>
+      <div className="homeScreen__deposit">
+        <Deposit />
+        <Profitable />
+        <News />
       </div>
     </main>
   );

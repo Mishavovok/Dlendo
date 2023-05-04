@@ -166,3 +166,60 @@
   width: 10px;
   margin-right: 5px;
 }
+
+@media (min-width: 2000px) {
+  .portfolio__info {
+    width: 443px;
+  }
+
+  .portfolio__info__item-text-1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .portfolio__info-circle-text {
+    font-size: 18px;
+  }
+  .portfolio__circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .portfolio__circle-progect {
+    top: 135px;
+    left: 100px;
+  }
+  .portfolio__circle-progect-color {
+    width: 15px;
+    height: 15px;
+  }
+  .portfolio__info__item-color-1,
+  .portfolio__info__item-color-2,
+  .portfolio__info__item-color-3,
+  .portfolio__info__item-color-4,
+  .portfolio__info__item-color-5,
+  .portfolio__info__item-color-6,
+  .portfolio__info__item-color-7,
+  .portfolio__info__item-color-8,
+  .portfolio__info__item-color-9 {
+    width: 15px;
+    height: 15px;
+  }
+
+  .portfolio__info-color {
+    width: 12px;
+    height: 12px;
+  }
+
+  .portfolio__info-item {
+    margin-top: 20px;
+  }
+
+  .portfolio__info-items {
+    margin-left: 0;
+  }
+
+  .portfolio__info-text {
+    font-size: 15px;
+  }
+}
+

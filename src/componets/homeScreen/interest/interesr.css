@@ -7,7 +7,7 @@
   height: 200px;
   padding: 10px;
   background: #19163f;
-  border: 1px solid #3D3F5E;
+  border: 1px solid #3d3f5e;
 }
 
 .interest__title {
@@ -29,15 +29,29 @@
 }
 
 .interest__statistics-img {
-  width: 18px;
+  width: 10px;
 }
 .interest__statistics-text {
-    color: #43fcff;
+  color: #43fcff;
   margin: 0;
   font-size: 10px;
 }
 .interest__statistics-number {
-    color: #43fcff;
+  color: #43fcff;
   margin: 0;
   font-size: 10px;
+}
+
+@media (min-width: 2000px) {
+  .interest__background {
+    width: 443px;
+    height: 275px;
+  }
+
+  .interest__statistics-text {
+    font-size: 15px;
+  }
+  .interest__statistics-number {
+    font-size: 15px;
+  }
 }

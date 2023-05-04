@@ -42,6 +42,11 @@
   margin-right: 10px;
 }
 
+.nav__link-img-question {
+  width: 14px;
+  margin-right: 10px;
+}
+
 .nav__link-active {
   padding: 0px 15px;
   background: #fa544d;

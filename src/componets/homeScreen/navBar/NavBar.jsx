@@ -3,13 +3,15 @@ import Profile from '../profile/Profile';
 import logo from '../../../assets/logo.png';
 import dashboard from '../../../assets/dashboard.png';
 import portfolio from '../../../assets/portfolio.png';
-import myportfolio from '../../../assets/myportfolio.png';
+import myportfolio from '../../../assets/mywallet.png';
 import mywallet from '../../../assets/mywallet.png';
 import partnership from '../../../assets/partnership.png';
 import server from '../../../assets/server.png';
-import question from '../../../assets/question-mark.png';
+import question from '../../../assets/question.png';
 import email from '../../../assets/email.png';
-import facebook from '../../../assets/facebook-app-symbol.png';
+import facebook from '../../../assets/facebook.png';
+import dlendo from '../../../assets/dlendo.png';
+
 import './navbar.css';
 
 function NavBar() {
@@ -50,11 +52,11 @@ function NavBar() {
       <h2 className="nav__panel">homepage</h2>
       <section className="nav__menu">
         <div className="nav__link">
-          <img className="nav__link-img" src={partnership} alt="" />
+          <img className="nav__link-img" src={dlendo} alt="" />
           <p>Dlendo</p>
         </div>
         <div className="nav__link">
-          <img className="nav__link-img" src={question} alt="" />
+          <img className="nav__link-img-question" src={question} alt="" />
           <p>FAQ</p>
         </div>
       </section>

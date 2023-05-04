@@ -22,14 +22,14 @@ export const options = {
       min: 0,
       max: 10,
       ticks: {
-        size: 10,
+        // size: 10,
         autoSkip: false,
         stepSize: 1,
         color: '#43fcff',
         callback: (value) => value + '%',
         font: {
-          size: 10.5,
-          weight: 200,
+          // size: 11,
+          // weight: 200,
         },
       },
     },
@@ -37,13 +37,21 @@ export const options = {
       ticks: {
         color: '#43fcff',
         font: {
-          size: 6.5,
-          weight: 200,
+          // size: 6.5,
+          // weight: 200,
         },
       },
     },
   },
 };
+// window.innerWidth > 2000 ? 20 : 10,
+// window.addEventListener('resize', () => {
+//   if (window.innerWidth < 2000) {
+//     ChartJS.options.legend.labels.fontSize = 10;
+//   } else {
+//     ChartJS.options.legend.labels.fontSize = 20
+//   }
+// });
 
 const labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 

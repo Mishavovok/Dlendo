@@ -37,7 +37,7 @@
 }
 
 .profile__balance__item-img {
-  width: 25px;
+  width: 18px;
 }
 
 .profile__balance__item-balance {
@@ -51,4 +51,30 @@
 
 .profile__options-img-active {
   background: #fa544d;
+}
+
+@media (min-width: 2000px) {
+  .profile {
+    width: 310px;
+  }  
+
+  .profile__options {
+    margin-left: 140px;
+  }
+
+  .profile__user-name {
+    font-size: 20px;
+  }
+
+  .profile__balance__item-balance {
+    font-size: 19px;
+  }
+
+  .profile__balance__item-number {
+    font-size: 19px;
+  }
+
+  .nav__link {
+    font-size: 18px;
+  } 
 }

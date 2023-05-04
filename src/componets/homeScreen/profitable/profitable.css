@@ -1,0 +1,143 @@
+.profitable__background {
+  background: #13153a;
+  border: 1px solid #3d3f5e;
+}
+
+.profitable__info {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 11px;
+}
+
+.profitable__item {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  background: #1e2044;
+  border: 1px solid #3d3f5e;
+  border-radius: 5px;
+}
+
+.profitable__data {
+  display: flex;
+  align-items: center;
+}
+
+.profitable__data-img {
+  margin-right: 10px;
+}
+
+.profitable__data-text {
+  width: 100px;
+}
+
+.profitable__project {
+  display: flex;
+  align-items: center;
+}
+
+.profitable__project-img {
+  margin-right: 10px;
+}
+
+.profitable__investors {
+  display: flex;
+  align-items: center;
+}
+
+.profitable__investors-img {
+  margin-right: 10px;
+}
+
+.profitable__roi {
+  display: flex;
+  align-items: center;
+}
+
+.profitable__roi-img {
+  margin-right: 10px;
+}
+
+.profitable__roi-text {
+  color: #43fcff;
+}
+
+.profitable__net {
+  display: flex;
+  align-items: center;
+}
+
+.profitable__net-text {
+  color: #43fcff;
+}
+
+.profitable__net-img {
+  margin-right: 10px;
+}
+
+.profitable__funded-text {
+  margin: 15px 0 10px 0;
+  color: #43fcff;
+}
+.profitable__funded-text-red {
+  color: #fa544d;
+}
+
+.profitable__funded-line {
+  width: 180px;
+  height: 5px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background: #fa544d;
+}
+
+.profitable__latest {
+  text-align: end;
+  margin-right: 20px;
+}
+.profitable__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow__radius {
+  padding: 8px 10px;
+  border-radius: 100%;
+  border: 1px solid #3d3f5e;
+}
+.arrow__radius-img {
+  width: 20px;
+}
+.profitable__page-number {
+  font-weight: 900;
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 100%;
+  border: 1px solid #3d3f5e;
+}
+.number-activ {
+  color: #fa544d;
+}
+
+@media (min-width: 2000px) {
+  .profitable__data-img {
+    width: 30px;
+  }
+
+  .profitable__project-img {
+    width: 40px;
+  }
+
+  .profitable__investors-img {
+    width: 30px;
+  }
+
+  .profitable__roi-img {
+    width: 20px;
+  }
+
+  .profitable__net-img {
+    width: 20px;
+  }
+}

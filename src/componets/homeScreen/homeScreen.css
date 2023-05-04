@@ -1,7 +1,7 @@
 .homeScreen {
   display: grid;
   grid-template-columns: 0.6fr 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr 1fr;
+  grid-template-rows: 0fr 0fr;
   gap: 10px 17px;
   grid-template-areas:
     'homeScreen__nav homeScreen__investors homeScreen__portfolio homeScreen__interest'
@@ -9,6 +9,8 @@
 }
 
 .homeScreen__nav {
+  width: 100%;
+  background: #15173c;
   grid-area: homeScreen__nav;
 }
 .homeScreen__investors {

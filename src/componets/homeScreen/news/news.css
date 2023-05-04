@@ -1,0 +1,142 @@
+.news__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news__title__search {
+  background: #15173c;
+  padding: 5px;
+  border-radius: 30px;
+  border: 1px solid #3d3f5e;
+}
+
+.news__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.news__title__search-img {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.news__title__search-input {
+  border: 0;
+  background: #15173c;
+  padding: 5px 20px;
+  border-radius: 30px;
+}
+
+.news__statistics {
+  display: flex;
+  align-items: center;
+}
+
+.news__item {
+  width: 295px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #3d3f5e;
+  background: #15173c;
+}
+
+.news__item-img {
+  width: 60px;
+  margin-right: 5px;
+}
+
+.news__statistics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+.news__statistics::after {
+  content: '';
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  width: calc(95% + 10px);
+  height: 1px;
+  background-color: #3d3f5e;
+}
+
+.news__statistics-img {
+  margin-right: 5px;
+}
+
+.news__statistics-date {
+  font-size: 13px;
+  margin: 0 10px 0 0;
+}
+
+.news__statistics-views {
+  font-size: 13px;
+  margin: 0;
+}
+
+.news__statistics-hashtag {
+  font-size: 10px;
+  margin: 0 0 4px 10px;
+  color: #43fcff;
+  border: 1px solid #fa544d;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.news__statistics-title {
+  font-size: 12px;
+  margin: 6px 0 5px 0;
+}
+
+.news__statistics-text {
+  font-size: 12px;
+  margin: 0;
+}
+
+
+@media (min-width: 2000px)  {
+  .news__item-img {
+    width: 300px;
+  }
+
+  .news__title__search {
+    padding: 10px;
+  }
+
+  .news__item {
+    width: 450px;
+  }
+
+  .news__statistics-date {
+    font-size: 18px;
+  }
+  .news__statistics-views {
+    font-size: 18px;
+  }
+
+  .news__statistics-hashtag {
+    font-size: 18px;
+  }
+
+  .news__statistics-title {
+    font-size: 20px;
+  }
+
+  .news__statistics-img {
+    width: 25px;
+  }
+
+  .news__statistics-text {
+    font-size: 20px;
+  }
+
+  .news__statistics::after {
+    bottom: 55px;
+    left: 0px;
+  }
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './deposit.css';
 import calendar from '../../../assets/calendar.png';
+import amounimg from '../../../assets/amount.png';
 import i from '../../../assets/i.png';
 import link from '../../../assets/link.png';
 import germany from '../../../assets/germany-323332.png';
@@ -27,11 +28,11 @@ function ItemUser({ data, nane, action, amount, amountImg, amountTitle, amountTe
             key={id}>
             {typeAction[id]}
           </p>
-          //   "deposit__item-action-text
+
         ))}
       </div>
       <div className="deposit__item-amount">
-        <img src="" alt="" />
+        <img className='deposit__item-amount-img' src={amounimg} alt="" />
         <p className="deposit__item-amount-text">{amount}</p>
       </div>
       <div className="deposit__item-crypto">
