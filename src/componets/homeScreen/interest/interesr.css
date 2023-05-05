@@ -55,3 +55,23 @@
     font-size: 15px;
   }
 }
+
+
+@media (min-width: 2400px) {
+  .interest__background {
+    width: 600px;
+    height: 364px;
+  }
+
+  .interest__statistics-text {
+    font-size: 18px;
+  }
+  .interest__statistics-number {
+    font-size: 18px;
+  }
+
+  .interest__statistics {
+    width: 170px;
+    margin-top: 25px;
+  }  
+}

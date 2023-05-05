@@ -1,4 +1,3 @@
-
 .portfolio__circle {
   width: 180px;
 }
@@ -40,7 +39,7 @@
   position: relative;
   display: flex;
   background: #13153a;
-  border: 1px solid #3D3F5E;
+  border: 1px solid #3d3f5e;
 }
 
 .portfolio__info__item-color {
@@ -223,3 +222,64 @@
   }
 }
 
+@media (min-width: 2400px) {
+  .portfolio__info {
+    width: 600px;
+  }
+
+  .portfolio__circle {
+    width: 330px;
+    height: 330px;
+  }
+
+  .portfolio__circle-progect {
+    top: 190px;
+    left: 150px;
+  }
+
+  .portfolio__info-items {
+    margin-top: 75px;
+  }
+
+  .portfolio__info-text {
+    font-size: 17px;
+  }
+  .portfolio__info-number {
+    font-size: 17px;
+  }
+
+  .portfolio__info-color {
+    width: 16px;
+    height: 16px;
+  }
+  .portfolio__info__item-color-1,
+  .portfolio__info__item-color-2,
+  .portfolio__info__item-color-3,
+  .portfolio__info__item-color-4,
+  .portfolio__info__item-color-5,
+  .portfolio__info__item-color-6,
+  .portfolio__info__item-color-7,
+  .portfolio__info__item-color-8,
+  .portfolio__info__item-color-9 {
+    width: 20px;
+    height: 20px;
+  }
+  .portfolio__info__item-color-text {
+    font-size: 25px;
+    margin-right: 20px;
+  }
+
+  .portfolio__info-img {
+    width: 20px;
+  }
+  .portfolio__info-neme {
+    margin-top: 15px;
+  }
+
+  .portfolio__info__item-text-1 {
+    font-size: 22px;
+  }
+  .portfolio__info-circle-text {
+    font-size: 25px;
+  }
+}
