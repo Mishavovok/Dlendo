@@ -9,8 +9,6 @@
 }
 
 .homeScreen__nav {
-  width: 100%;
-  background: #15173c;
   grid-area: homeScreen__nav;
 }
 .homeScreen__investors {
@@ -26,3 +24,26 @@
   margin-right: 20px;
   grid-area: homeScreen__deposit;
 }
+
+@media (max-width: 1024px) {
+  .homeScreen {
+    gap: 10px 10px;
+  }
+}
+
+@media (max-width: 990px) {
+  .homeScreen {
+    gap: 10px 4px;
+  }
+  .homeScreen {
+    grid-template-columns: 0.4fr 0.4fr 0.4fr 0.4fr;
+  }
+}
+
+@media (max-width: 866px) {
+  .homeScreen {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+ 

@@ -78,3 +78,26 @@
     font-size: 18px;
   } 
 }
+
+@media (max-width: 1300px) {
+  .profile {
+    width: 190px;
+  }
+
+  .profile__options {
+    margin-left: 40px;
+  }
+
+  .profile__balance-item {
+    margin-left: 10px;
+  }
+
+  .profile__balance__item-balance {
+    margin-right: 20px;
+  }
+
+  .profile__balance__item-number {
+    font-size: 14px;
+  }
+
+}

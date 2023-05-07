@@ -47,7 +47,7 @@
   }
   .background__item-time-text {
     font-size: 15px;
-  } 
+  }
   .background__item-time-number {
     font-size: 15px;
   }
@@ -66,3 +66,47 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .investors__background {
+    width: 282px;
+  }
+
+  .background__item-time {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  .investors__background {
+    width: 282px;
+  }
+  .background__item-time {
+    padding: 4px 5px;
+  }
+}
+@media (max-width: 866px) {
+  .investors {
+    margin-left: 10px;
+  }
+  .investors__background {
+    width: 370px;
+  }
+}
+
+@media (max-width: 700px) {
+  .investors {
+    margin-left: 30px;
+  }
+  .investors__background {
+    width: 442px;
+  }
+}
+
+@media (max-width: 400px) {
+  .investors {
+    margin-left: 10px;
+  }
+  .investors__background {
+    width: 360px;
+  }
+} 

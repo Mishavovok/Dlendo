@@ -56,7 +56,6 @@
   }
 }
 
-
 @media (min-width: 2400px) {
   .interest__background {
     width: 600px;
@@ -73,5 +72,37 @@
   .interest__statistics {
     width: 170px;
     margin-top: 25px;
-  }  
+  }
+}
+
+@media (max-width: 1024px) {
+  .interest__background {
+    width: 295px;
+  }
+}
+
+@media (max-width: 866px) {
+  .interest {
+    margin-left: 60px;
+  }
+  .interest__background {
+    width: 442px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 700px) {
+  .interest {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 400px) {
+  .interest {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .interest__background {
+    width: 360px;
+    height: 215px;
+  }
 }

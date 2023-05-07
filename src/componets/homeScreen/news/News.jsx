@@ -12,7 +12,7 @@ function News() {
           <p>News about of changing the Dlendo portfolio</p>
         </div>
         <div className="news__title__search">
-          <form>
+          <form className='news__form'>
             <img className="news__title__search-img" src={search} alt="" />
             <input
               className="news__title__search-input"

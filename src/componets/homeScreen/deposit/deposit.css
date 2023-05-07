@@ -176,3 +176,68 @@
     width: 25px;
   }
 }
+
+@media (max-width: 1024px) {
+  .deposit__item {
+    font-size: 13px;
+  }
+
+  .deposit__item-data-number {
+    width: 80px;
+  }
+} 
+@media (max-width: 866px) {
+  .deposit {
+    margin-left: 65px;
+  }
+
+  .deposit__info {
+    width: 930px;
+  }
+  .deposit__item {
+    width: 900px;
+  }
+
+  .deposit__background {
+    width: 770px;
+  }
+
+  .deposit__scroll {
+    width: 770px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
+
+@media (max-width: 700px) {
+  .deposit {
+    margin-left: 80px;
+  }
+  .deposit__background {
+    width: 550px;
+  }
+
+  .deposit__scroll {
+    width: 550px;
+  }
+}
+
+@media (max-width: 400px) {
+  .deposit {
+    margin-left: 10px;
+  }
+  .deposit__background {
+    width: 380px;
+  }
+
+  .deposit__scroll {
+    width: 380px;
+  }
+  .deposit__latest {
+    margin-right: 5px;
+  }
+  .deposit__page-number {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}

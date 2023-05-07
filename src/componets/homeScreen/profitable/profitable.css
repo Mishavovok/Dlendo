@@ -141,3 +141,73 @@
     width: 20px;
   }
 }
+
+@media (min-width: 1024px) {
+  .profitable__info {
+    font-size: 9px;
+  }
+
+  .profitable__item {
+    font-size: 13px;
+  }
+
+  .profitable__data-text {
+    width: 80px;
+  }
+
+  .profitable__investors {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 866px) {
+  .profitable {
+    margin-left: 65px;
+  }
+  .profitable__background {
+    width: 770px;
+  }
+
+  .profitable__info {
+    width: 1060px;
+  }
+
+  .profitable__scroll {
+    width: 770px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .profitable__item {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 700px) {
+  .profitable {
+    margin-left: 80px;
+  }
+  .profitable__background {
+    width: 550px;
+  }
+  .profitable__scroll {
+    width: 550px;
+  }
+}
+
+@media (max-width: 400px) {
+  .profitable {
+    margin-left: 10px;
+  }
+  .profitable__background {
+    width: 380px;
+  }
+  .profitable__scroll {
+    width: 380px;
+  }
+
+  .profitable__page-number {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}

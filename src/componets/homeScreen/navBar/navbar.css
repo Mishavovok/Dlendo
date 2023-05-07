@@ -1,5 +1,6 @@
 .nav {
   width: 250px;
+  height: 100%;
   background: #19163f;
 }
 
@@ -27,13 +28,10 @@
   text-transform: uppercase;
 }
 
-.nav__menu {
-  margin-left: 35px;
-}
-
 .nav__link {
   width: 180px;
   display: flex;
+  margin-left: 20px;
   align-items: center;
 }
 
@@ -53,4 +51,125 @@
   color: #ffffff;
   border-radius: 10px;
   border: 1px solid #ffffff;
+}
+
+@media (max-width: 1300px) {
+  .nav {
+    width: 200px;
+  }
+
+  .nav__logo {
+    margin-left: 10px;
+  }
+  .nav__logo-img {
+    width: 50px;
+  }
+
+  .nav__logo-text {
+    font-size: 28px;
+  }
+  .nav__link {
+    width: 145px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    position: absolute;
+    background: #15173c;
+    height: 400%;
+    
+    left: -100%;
+    transition: left 0.6s;
+  }
+
+  .nav__active {
+    display: block;
+    z-index: 10;
+    left: 0;
+  }
+
+  .nav__logo {
+    margin-top: 40px;
+  }
+
+  .menu__burger {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 30px;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #15173c;
+  }
+  .menu__burger::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    width: 30px;
+    height: 2px;
+    background: #15173c;
+  }
+  .menu__burger::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    width: 30px;
+    height: 2px;
+    background: #15173c;
+  }
+
+  .menu__burger-couse {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 30px;
+    display: block;
+    width: 30px;
+    height: 2px;
+    z-index: 10;
+  }
+  .menu__burger-couse::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 2px;
+    background: #090b32;
+    transform: rotate(-45deg);
+  }
+  .menu__burger-couse::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background: #090b32;
+    transform: rotate(45deg);
+
+  }
+}
+
+@media (max-width: 990px) {
+  .nav {
+    height: 430%;
+  } 
+}
+
+@media (max-width: 866px) {
+  .nav {
+    height: 586%;
+  } 
+}
+
+@media (max-width: 700px) {
+  .nav {
+    height: 660%;
+  } 
+}
+
+@media (max-width: 400px) {
+  .nav {
+    height: 707%;
+  } 
 }

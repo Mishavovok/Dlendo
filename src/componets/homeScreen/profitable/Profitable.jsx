@@ -2,7 +2,7 @@ import React from 'react';
 import Item from './Item';
 import left from '../../../assets/left-arrow.png';
 import right from '../../../assets/right-arrow.png';
-import './profitable.css'
+import './profitable.css';
 
 function Profitable() {
   return (
@@ -10,21 +10,24 @@ function Profitable() {
       <h1>Profitable projects</h1>
       <p>List of Dlendo profitable projects</p>
       <div className="profitable__background">
-        <div className="profitable__info">
-          <h1>Data</h1>
-          <h1>Project</h1>
-          <h1>Investors</h1>
-          <h1>Funded amount</h1>
-          <h1>ROI</h1>
-          <h1>Net profit</h1>
+        <div className="profitable__scroll">
+          <div className="profitable__info">
+            <h1>Data</h1>
+            <h1>Project</h1>
+            <h1>Investors</h1>
+            <h1>Funded amount</h1>
+            <h1>ROI</h1>
+            <h1>Net profit</h1>
+          </div>
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
         </div>
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
+
         <p className="profitable__latest">Latest actions (Showing 01 to 06 of 765)</p>
         <div className="profitable__page">
           <p className="arrow__radius">

@@ -25,12 +25,10 @@ function HomeScreen() {
       </div>
       <div className="homeScreen__deposit">
         <Deposit />
-      </div>
-      <div className="homeScreen__deposit">
-        <Deposit />
         <Profitable />
         <News />
       </div>
+      
     </main>
   );
 }

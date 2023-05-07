@@ -21,17 +21,20 @@ function Deposit() {
       <h1>Deposit / Withdrawal</h1>
       <p>Recent / withdrawl crypto transactions</p>
       <div className="deposit__background">
-        <div className="deposit__info">
-          <h1>Data</h1>
-          <h1>Username</h1>
-          <h1>Action</h1>
-          <h1>Amount (fiat)</h1>
-          <h1>Amount (Crypto)</h1>
-          <h1>Transaction link</h1>
+        <div className='deposit__scroll'>
+          <div className="deposit__info">
+            <h1>Data</h1>
+            <h1>Username</h1>
+            <h1>Action</h1>
+            <h1>Amount (fiat)</h1>
+            <h1>Amount (Crypto)</h1>
+            <h1>Transaction link</h1>
+          </div>
+          {items.map((obj) => (
+            <ItemUser key={obj.id} {...obj} />
+          ))}
         </div>
-        {items.map((obj) => (
-          <ItemUser key={obj.id} {...obj} />
-        ))}
+
         <p className="deposit__latest">Latest actions (Showing 01 to 06 of 765)</p>
         <div className="deposit__page">
           <p className="arrow__radius">
