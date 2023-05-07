@@ -137,7 +137,7 @@
 }
 
 .number-activ {
-    color: #fa544d;
+  color: #fa544d;
 }
 
 .arrow__radius {
@@ -147,7 +147,7 @@
 }
 
 .arrow__radius-img {
-    width: 20px;
+  width: 20px;
 }
 
 @media (min-width: 2000px) {
@@ -185,7 +185,7 @@
   .deposit__item-data-number {
     width: 80px;
   }
-} 
+}
 @media (max-width: 866px) {
   .deposit {
     margin-left: 65px;
@@ -239,5 +239,17 @@
   .deposit__page-number {
     margin-left: 3px;
     margin-right: 3px;
+  }
+}
+
+@media (max-width: 390px) {
+  .deposit {
+    margin-left: 25px;
+  }
+  .deposit__background {
+    width: 350px;
+  }
+  .deposit__scroll {
+    width: 350px;
   }
 }

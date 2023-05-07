@@ -211,3 +211,15 @@
     margin-right: 3px;
   }
 }
+
+@media (max-width: 390px) {
+  .profitable {
+    margin-left: 25px;
+  }
+  .profitable__background {
+    width: 350px;
+  }
+  .profitable__scroll {
+    width: 350px;
+  }
+}

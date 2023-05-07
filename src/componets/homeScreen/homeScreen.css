@@ -47,3 +47,17 @@
   }
 }
  
+@media (max-width: 390px) {
+  .homeScreen__investors {
+    margin: 0 auto;
+  }
+
+  .homeScreen__portfolio {
+    margin: 0 auto;
+  }
+
+  .homeScreen__interest {
+    margin: 0 auto;
+  }
+
+}

@@ -497,3 +497,20 @@
     width: 10px;
   }
 }
+@media (max-width: 390px) {
+  .portfolio__info {
+    width: 330px;
+  }
+  .portfolio__info__item-color-1,
+  .portfolio__info__item-color-2,
+  .portfolio__info__item-color-3,
+  .portfolio__info__item-color-4,
+  .portfolio__info__item-color-5,
+  .portfolio__info__item-color-6,
+  .portfolio__info__item-color-7,
+  .portfolio__info__item-color-8,
+  .portfolio__info__item-color-9 {
+    width: 12px;
+    height: 12px;
+  }
+}

@@ -110,3 +110,12 @@
     width: 360px;
   }
 } 
+
+@media (max-width: 390px) {
+  .investors {
+    margin-left: 10px;
+  }
+  .investors__background {
+    width: 320px;
+  }
+} 
