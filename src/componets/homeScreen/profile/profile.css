@@ -53,6 +53,8 @@
   background: #fa544d;
 }
 
+
+
 @media (min-width: 2000px) {
   .profile {
     width: 310px;
@@ -62,16 +64,20 @@
     margin-left: 140px;
   }
 
+  .profile__options-img {
+    width: 25px;
+  }
+
   .profile__user-name {
     font-size: 20px;
   }
 
   .profile__balance__item-balance {
-    font-size: 19px;
+    font-size: 21px;
   }
 
   .profile__balance__item-number {
-    font-size: 19px;
+    font-size: 21px;
   }
 
   .nav__link {
