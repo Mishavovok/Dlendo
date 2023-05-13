@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
-import hands from '../../../assets/hands.png';
+import Color from './Color';
 import './portfolio.css';
 
 ChartJS.register(ArcElement, Tooltip);
@@ -49,6 +49,17 @@ export const data = {
   ],
 };
 function Portfolio() {
+  const [items, setItems] = useState([]);
+  useEffect(() => {
+    fetch('https://644e7d724e86e9a4d8fa22f8.mockapi.io/color')
+      .then((res) => {
+        return res.json();
+      })
+      .then((arr) => {
+        setItems(arr);
+      });
+  }, []);
+
   return (
     <section className="portfolio">
       <h1 className="portfolio__title">Portfolio</h1>
@@ -56,43 +67,16 @@ function Portfolio() {
 
       <div className="portfolio__info">
         <div className="portfolio__info-circle">
-          <p className='portfolio__info-circle-text'>Whole poryfolio</p>
+          <p className="portfolio__info-circle-text">Whole poryfolio</p>
           <div className="portfolio__circle">
             <Doughnut options={options} data={data} />
           </div>
-          <div className="portfolio__circle-progect">
-            <span className="portfolio__circle-progect-color"></span>
-            <p className="portfolio__circle-text">€ 1332124</p>
-          </div>
+          
         </div>
         <div className="portfolio__info-items">
-          <div className="portfolio__info__item-color">
-            <p className="portfolio__info__item-color-text">All</p>
-            <span className="portfolio__info__item-color-1 active__color"></span>
-            <span className="portfolio__info__item-color-2"></span>
-            <span className="portfolio__info__item-color-3"></span>
-            <span className="portfolio__info__item-color-4"></span>
-            <span className="portfolio__info__item-color-5"></span>
-            <span className="portfolio__info__item-color-6"></span>
-            <span className="portfolio__info__item-color-7"></span>
-            <span className="portfolio__info__item-color-9"></span>
-          </div>
-          <div className="portfolio__info-item">
-            <div className="portfolio__info__item-text">
-              <h5 className="portfolio__info__item-text-1">Project</h5>
-              <h5 className="portfolio__info__item-text-1">Invested</h5>
-            </div>
-            <div className="portfolio__info-neme">
-              <span className="portfolio__info-color"></span>
-              <p className="portfolio__info-text">Alberchtstrabe</p>
-              <p className="portfolio__info-number">€154000</p>
-            </div>
-            <div className="portfolio__info-neme">
-              <img className="portfolio__info-img" src={hands} alt="" />
-              <p className="portfolio__info-text">All projects</p>
-              <p className="portfolio__info-number">€423000</p>
-            </div>
-          </div>
+            {items.map((obj) => (
+              <Color key={obj.id} {...obj} />
+            ))}
         </div>
       </div>
     </section>

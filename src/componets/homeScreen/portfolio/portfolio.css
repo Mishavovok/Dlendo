@@ -3,14 +3,13 @@
 }
 .portfolio__circle-progect {
   position: absolute;
-  left: 66px;
+  left: 80px;
   top: 99px;
 }
 
 .portfolio__circle-progect-color {
   width: 10px;
   height: 10px;
-  background: #ff45d4;
   display: block;
   margin: 0 auto;
 }
@@ -53,67 +52,13 @@
 .portfolio__info__item-text-1 {
   margin: 0;
 }
-.portfolio__info__item-color-1 {
+
+.portfolio__info__item-color-block {
   width: 10px;
   height: 10px;
-  background: #ff45d4;
   display: block;
-  margin-right: 5px;
-}
-.portfolio__info__item-color-2 {
-  width: 10px;
-  height: 10px;
-  background: #f8ff45;
-  display: block;
-  margin-right: 5px;
-}
-.portfolio__info__item-color-3 {
-  width: 10px;
-  height: 10px;
-  background: #7eff45;
-  display: block;
-  margin-right: 5px;
-}
-.portfolio__info__item-color-4 {
-  width: 10px;
-  height: 10px;
-  background: #ab45ff;
-  display: block;
-  margin-right: 5px;
-}
-.portfolio__info__item-color-5 {
-  width: 10px;
-  height: 10px;
-  background: #fa544d;
-  display: block;
-  margin-right: 5px;
-}
-.portfolio__info__item-color-6 {
-  width: 10px;
-  height: 10px;
-  background: #43fcff;
-  display: block;
-  margin-right: 5px;
-}
-.portfolio__info__item-color-7 {
-  width: 10px;
-  height: 10px;
-  background: #4e7cff;
-  display: block;
-  margin-right: 5px;
-}
-.portfolio__info__item-color-8 {
-  width: 10px;
-  height: 10px;
-  background: #ffb100;
-  display: block;
-  margin-right: 5px;
-}
-.portfolio__info__item-color-9 {
-  width: 10px;
-  height: 10px;
-  background: #51358e;
-  display: block;
+  padding: 0;
+  border: 0;
   margin-right: 5px;
 }
 
@@ -184,22 +129,14 @@
   }
 
   .portfolio__circle-progect {
-    top: 135px;
-    left: 100px;
+    top: 140px;
+    left: 116px;
   }
   .portfolio__circle-progect-color {
     width: 15px;
     height: 15px;
   }
-  .portfolio__info__item-color-1,
-  .portfolio__info__item-color-2,
-  .portfolio__info__item-color-3,
-  .portfolio__info__item-color-4,
-  .portfolio__info__item-color-5,
-  .portfolio__info__item-color-6,
-  .portfolio__info__item-color-7,
-  .portfolio__info__item-color-8,
-  .portfolio__info__item-color-9 {
+  .portfolio__info__item-color-block {
     width: 15px;
     height: 15px;
   }
@@ -233,8 +170,8 @@
   }
 
   .portfolio__circle-progect {
-    top: 181px;
-    left: 140px;
+    top: 190px;
+    left: 156px;
   }
 
   .portfolio__info-items {
@@ -252,15 +189,7 @@
     width: 16px;
     height: 16px;
   }
-  .portfolio__info__item-color-1,
-  .portfolio__info__item-color-2,
-  .portfolio__info__item-color-3,
-  .portfolio__info__item-color-4,
-  .portfolio__info__item-color-5,
-  .portfolio__info__item-color-6,
-  .portfolio__info__item-color-7,
-  .portfolio__info__item-color-8,
-  .portfolio__info__item-color-9 {
+  .portfolio__info__item-color-block {
     width: 20px;
     height: 20px;
   }
@@ -299,23 +228,15 @@
   }
 
   .portfolio__circle-progect {
-    top: 115px;
-    left: 50px;
+    top: 118px;
+    left: 65px;
   }
 
   .portfolio__info__item-color-text {
     font-size: 15px;
   }
 
-  .portfolio__info__item-color-1,
-  .portfolio__info__item-color-2,
-  .portfolio__info__item-color-3,
-  .portfolio__info__item-color-4,
-  .portfolio__info__item-color-5,
-  .portfolio__info__item-color-6,
-  .portfolio__info__item-color-7,
-  .portfolio__info__item-color-8,
-  .portfolio__info__item-color-9 {
+  .portfolio__info__item-color-block {
     width: 8px;
     height: 8px;
   }
@@ -339,6 +260,12 @@
   .portfolio__info__item-text-1 {
     font-size: 11px;
   }
+
+  .portfolio__circle-progect {
+    top: 115px;
+    left: 66px;
+  }
+
   .portfolio__info-color {
     width: 8px;
     height: 8px;
@@ -355,6 +282,9 @@
   .portfolio__info-number {
     font-size: 8px;
   }
+  .portfolio__info__item-color-block {
+    margin-right: 3px;
+  }
 }
 @media (max-width: 866px) {
   .portfolio__info {
@@ -368,23 +298,15 @@
   }
 
   .portfolio__circle-progect {
-    top: 133px;
-    left: 70px;
+    top: 141px;
+    left: 87px;
   }
 
   .portfolio__info__item-color-text {
     font-size: 17px;
   }
 
-  .portfolio__info__item-color-1,
-  .portfolio__info__item-color-2,
-  .portfolio__info__item-color-3,
-  .portfolio__info__item-color-4,
-  .portfolio__info__item-color-5,
-  .portfolio__info__item-color-6,
-  .portfolio__info__item-color-7,
-  .portfolio__info__item-color-8,
-  .portfolio__info__item-color-9 {
+  .portfolio__info__item-color-block {
     width: 12px;
     height: 12px;
   }
@@ -405,11 +327,17 @@
   }
 }
 
-@media (max-width: 700px) { 
+@media (max-width: 866px) {
+  .portfolio {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 700px) {
   .portfolio {
     margin-left: 80px;
   }
-  .portfolio__info  {
+  .portfolio__info {
     width: 442px;
   }
   .portfolio__circle {
@@ -417,23 +345,15 @@
     height: 200px;
   }
   .portfolio__circle-progect {
-    top: 140px;
-    left: 75px;
+    top: 144px;
+    left: 88px;
   }
 
   .portfolio__info__item-color-text {
     font-size: 20px;
   }
 
-  .portfolio__info__item-color-1,
-  .portfolio__info__item-color-2,
-  .portfolio__info__item-color-3,
-  .portfolio__info__item-color-4,
-  .portfolio__info__item-color-5,
-  .portfolio__info__item-color-6,
-  .portfolio__info__item-color-7,
-  .portfolio__info__item-color-8,
-  .portfolio__info__item-color-9 {
+  .portfolio__info__item-color-block {
     width: 16px;
     height: 16px;
   }
@@ -459,12 +379,12 @@
     height: 15px;
   }
 
-  .portfolio__info-img  {
+  .portfolio__info-img {
     width: 15px;
   }
 }
 
-@media (max-width: 420px)  {
+@media (max-width: 420px) {
   .portfolio {
     margin-left: 10px;
   }
@@ -477,8 +397,8 @@
     height: 150px;
   }
   .portfolio__circle-progect {
-    top: 110px;
-    left: 51px;
+    top: 120px;
+    left: 64px;
   }
   .portfolio__info__item-text-1 {
     font-size: 15px;
@@ -501,15 +421,7 @@
   .portfolio__info {
     width: 330px;
   }
-  .portfolio__info__item-color-1,
-  .portfolio__info__item-color-2,
-  .portfolio__info__item-color-3,
-  .portfolio__info__item-color-4,
-  .portfolio__info__item-color-5,
-  .portfolio__info__item-color-6,
-  .portfolio__info__item-color-7,
-  .portfolio__info__item-color-8,
-  .portfolio__info__item-color-9 {
+  .portfolio__info__item-color-block {
     width: 12px;
     height: 12px;
   }

@@ -13,6 +13,7 @@
 
 .news__info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 30px;
 }
@@ -35,6 +36,7 @@
 }
 
 .news__item {
+  margin-top: 30px;
   width: 295px;
   display: flex;
   align-items: center;
@@ -108,6 +110,7 @@
   }
 
   .news__item {
+    margin-top: 40px;
     width: 450px;
   }
 
@@ -137,6 +140,10 @@
   .news__statistics::after {
     bottom: 55px;
     left: 0px;
+  }
+
+  .news__info {
+    width: 1800px;
   }
 }
 

@@ -35,6 +35,14 @@
   align-items: center;
 }
 
+.nav__link:hover {
+  padding: 0px 15px;
+  background: #fa544d;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
 .nav__link-img {
   width: 20px;
   margin-right: 10px;
@@ -52,8 +60,6 @@
   border-radius: 10px;
   border: 1px solid #ffffff;
 }
-
-
 
 @media (min-width: 2000px) {
   .nav {
@@ -91,7 +97,7 @@
     position: absolute;
     background: #15173c;
     height: 400%;
-    
+
     left: -100%;
     transition: left 0.6s;
   }
@@ -158,30 +164,40 @@
     height: 2px;
     background: #090b32;
     transform: rotate(45deg);
-
   }
 }
 
 @media (max-width: 990px) {
   .nav {
     height: 430%;
-  } 
+  }
 }
 
 @media (max-width: 866px) {
   .nav {
     height: 586%;
-  } 
+  }
 }
 
 @media (max-width: 700px) {
   .nav {
     height: 660%;
-  } 
+  }
 }
 
 @media (max-width: 420px) {
   .nav {
+    width: 210px;
     height: 707%;
-  } 
+  }
+  .profile__balance-item {
+    margin-left: 15px;
+  }
+  .nav__link {
+    width: 140px;
+    margin-left: 25px;
+  }
+  .nav__panel {
+    margin-left: 15px;
+  }
 }
