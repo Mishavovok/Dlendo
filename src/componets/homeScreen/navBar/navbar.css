@@ -23,19 +23,23 @@
 
 .nav__panel {
   font-size: 12px;
-  font-weight: 800;
-  margin-left: 10px;
+  font-weight: 700;
+  margin-left: 15px;
   text-transform: uppercase;
 }
 
 .nav__link {
   width: 180px;
   display: flex;
-  margin-left: 20px;
+  font-weight: 400;
+  margin-left: 30px;
   align-items: center;
+  transition: .3s ;
 }
 
 .nav__link:hover {
+  font-size: 14px;
+  font-weight: 700;
   padding: 0px 15px;
   background: #fa544d;
   color: #ffffff;
@@ -48,12 +52,17 @@
   margin-right: 10px;
 }
 
+.nav__link:hover svg path {
+fill: rgb(255, 255, 255);
+}
+
 .nav__link-img-question {
   width: 14px;
   margin-right: 10px;
 }
 
 .nav__link-active {
+  font-weight: 700;
   padding: 0px 15px;
   background: #fa544d;
   color: #ffffff;
@@ -66,9 +75,17 @@
     width: 325px;
   }
   .nav__link {
-    width: 220px;
-    font-size: 20px;
+    width: 235px;
+    margin-left: 55px;
+    font-size: 18px;
   }
+
+  .nav__panel {
+    font-size: 16px;
+    margin-left: 35px;
+  }
+
+
 }
 
 @media (max-width: 1300px) {

@@ -143,7 +143,13 @@
   }
 
   .news__info {
-    width: 1800px;
+    width: 1600px;
+  }
+}
+
+@media (min-width: 2400px) {
+  .news__info {
+    width: 1878px;
   }
 }
 

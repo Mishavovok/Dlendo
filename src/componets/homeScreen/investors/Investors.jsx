@@ -34,12 +34,16 @@ const options = {
         autoSkip: false,
         color: '#43fcff',
         font: {
+          family: 'Montserrat',
+          fontweight: 100,
           // size: 11,
-          // weight: 200,
         },
       },
     },
     y: {
+      font: {
+        weight: 200,
+      },
       ticks: {
         color: '#43fcff',
       },
@@ -55,7 +59,8 @@ export const data = {
       label: 'Dataset 1',
       borderColor: '#43fcff',
       backgroundColor: '#FA544D',
-      borderWidth: 1,
+      borderWidth: 1.5,
+      pointRadius: 3,
       fontSize: 100,
       fill: false,
       data: [1000, 600, 800, 400, 800, 1000, 1000, 600, 800, 400, 500, 600],

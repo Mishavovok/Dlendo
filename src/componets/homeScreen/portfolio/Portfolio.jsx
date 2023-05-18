@@ -7,6 +7,7 @@ import './portfolio.css';
 ChartJS.register(ArcElement, Tooltip);
 const options = {
   cutout: [10, 75, 60, 50],
+ 
 };
 export const data = {
   labels: [],
@@ -71,12 +72,11 @@ function Portfolio() {
           <div className="portfolio__circle">
             <Doughnut options={options} data={data} />
           </div>
-          
         </div>
         <div className="portfolio__info-items">
-            {items.map((obj) => (
-              <Color key={obj.id} {...obj} />
-            ))}
+          {items.map((obj) => (
+            <Color key={obj.id} {...obj} />
+          ))}
         </div>
       </div>
     </section>

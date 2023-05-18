@@ -7,7 +7,6 @@ import {
   LineElement,
   Title,
   Tooltip,
-  Legend,
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import './interesr.css';
@@ -28,8 +27,7 @@ export const options = {
         color: '#43fcff',
         callback: (value) => value + '%',
         font: {
-          // size: 11,
-          // weight: 200,
+          fontweight: 100,
         },
       },
     },
@@ -37,8 +35,8 @@ export const options = {
       ticks: {
         color: '#43fcff',
         font: {
-          // size: 6.5,
-          // weight: 200,
+          family: 'Montserrat',
+          fontweight: 100,
         },
       },
     },
@@ -60,9 +58,11 @@ export const data = {
   datasets: [
     {
       label: 'Dataset',
-      data: [3, 4, 3, 5, 6.5, 5, 5, 7, 4, 5, 9, 6],
+      data: [3, 4, 3, 4, 5, 4.5, 4.5, 5.5, 4, 5, 3.5, 4.5],
       borderColor: '#43fcff',
       backgroundColor: '#FA544D',
+      pointRadius: 3,
+      borderWidth: 1.5,
     },
   ],
 };
@@ -75,9 +75,9 @@ function Interest() {
       <div className="interest__background">
         <Line options={options} data={data} />
         <div className="interest__statistics">
-          <img className='interest__statistics-img' src={arrowmoney} alt="" />
-          <p className='interest__statistics-text'>Last month</p>
-          <p className='interest__statistics-number'>5.7%</p>
+          <img className="interest__statistics-img" src={arrowmoney} alt="" />
+          <p className="interest__statistics-text">Last month</p>
+          <p className="interest__statistics-number">5.7%</p>
         </div>
       </div>
     </div>
