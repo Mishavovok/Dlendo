@@ -41,7 +41,11 @@
   margin: 0;
   padding: 0;
 }
-
+@media (min-width: 1900px) {
+  .investors__background {
+    width: 470px;
+  }
+}
 @media (min-width: 2000px) {
   .investors__background {
     width: 500px;
@@ -60,6 +64,9 @@
     width: 600px;
   }
 
+  .background__item-time {
+    margin-bottom: 21px;
+  }
 }
 
 @media (max-width: 1024px) {
