@@ -40,7 +40,7 @@
 .nav__link:hover {
   font-size: 14px;
   font-weight: 700;
-  padding: 0px 15px;
+  padding: 3px;
   background: #fa544d;
   color: #ffffff;
   border-radius: 10px;

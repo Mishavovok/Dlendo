@@ -34,7 +34,8 @@
 }
 
 .deposit__item-data-number {
-  width: 100px;
+  width: 90px;
+  font-size: 14px;
   margin-top: 10px;
 }
 
@@ -49,10 +50,14 @@
 }
 
 .deposit__item-user-text {
+  font-size: 14px;
   margin: 0;
 }
 
 .deposit__item-amount {
+  margin-right: 20px;
+  font-size: 14px;
+  width: 105px;
   display: flex;
   align-items: center;
 }
@@ -62,11 +67,14 @@
 }
 
 .deposit__item-amount-text {
-  margin: 0 20px 0 0;
+  margin: 0 0 0 0;
   color: #43fcff;
 }
 
 .deposit__item-action {
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
   margin: 0;
 }
 
@@ -78,6 +86,7 @@
 .deposit__item-action-text-color {
   color: #fa544d;
   margin-top: 20px;
+  font-size: 14px;
 }
 
 .deposit__item-crypto {
@@ -93,9 +102,12 @@
 
 .deposit-color {
   color: #43fcff;
+  font-size: 14px;
+  margin: 5px;
 }
 
 .deposit__item-crypto-text {
+  font-size: 12px;
   margin: 5px;
 }
 
@@ -105,6 +117,7 @@
 }
 
 .deposit__item-transaction-text {
+  font-size: 12px;
   margin: 5px;
   color: #4266d4;
 }
@@ -150,6 +163,43 @@
   width: 20px;
 }
 
+@media (min-width: 2400px) {
+  .deposit__info {
+    font-size: 16px;
+  }
+  .deposit__item-data-number {
+    width: 115px;
+    font-size: 20px;
+  }
+
+  .deposit__item-user-text {
+    font-size: 20px;
+  }
+
+  .deposit__item-action {
+    font-size: 20px;
+  }
+
+  .deposit__item-action-text-color {
+    font-size: 20px;
+  }
+  .deposit__item-amount {
+    width: 170px;
+    font-size: 20px;
+  }
+
+  .deposit-color {
+    font-size: 20px;
+  }
+  .deposit__item-crypto-text {
+    font-size: 18px;
+  }
+
+  .deposit__item-transaction-text {
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 2000px) {
   .deposit__item-data-img {
     width: 30px;
@@ -184,6 +234,7 @@
 
   .deposit__item-data-number {
     width: 80px;
+    font-size: 13px;
   }
 }
 @media (max-width: 866px) {
@@ -192,10 +243,10 @@
   }
 
   .deposit__info {
-    width: 930px;
+    width: 1024px;
   }
   .deposit__item {
-    width: 900px;
+    width: 1000px;
   }
 
   .deposit__background {

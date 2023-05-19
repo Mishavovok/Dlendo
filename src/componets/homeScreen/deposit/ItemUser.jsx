@@ -38,7 +38,7 @@ function ItemUser({ data, nane, action, amount, amountImg, amountTitle, amountTe
       <div className="deposit__item-crypto">
         <img className="deposit__item-crypto-img" src={amountImg} alt="" />
         <div>
-          <p className="deposit__item-crypto-text deposit-color">{amountTitle}</p>
+          <p className="deposit-color">{amountTitle}</p>
           <p className="deposit__item-crypto-text">{amountText}</p>
         </div>
       </div>

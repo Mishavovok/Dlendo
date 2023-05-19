@@ -22,7 +22,16 @@
   background: #19163f;
   margin-right: 10px;
   border-radius: 0px 0px 10px 10px;
+  transition: .3s;
 }
+
+.profile__options-img:hover{
+  background: #fa544d;
+}
+
+.profile__options-img:hover svg path {
+  fill: rgb(255, 255, 255);
+  }
 
 .profile__user-name {
   margin-left: 20px;
@@ -49,9 +58,7 @@
   color: #ffffff;
 }
 
-.profile__options-img-active {
-  background: #fa544d;
-}
+
 
 
 

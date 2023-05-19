@@ -20,12 +20,6 @@ function Profitable() {
             <h1>Net profit</h1>
           </div>
           <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
         </div>
 
         <p className="profitable__latest">Latest actions (Showing 01 to 06 of 765)</p>

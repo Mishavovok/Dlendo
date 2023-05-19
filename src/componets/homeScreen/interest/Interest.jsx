@@ -61,7 +61,7 @@ export const data = {
       data: [3, 4, 3, 4, 5, 4.5, 4.5, 5.5, 4, 5, 3.5, 4.5],
       borderColor: '#43fcff',
       backgroundColor: '#FA544D',
-      pointRadius: 3,
+      pointRadius: 4,
       borderWidth: 1.5,
     },
   ],

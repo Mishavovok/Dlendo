@@ -173,6 +173,7 @@
   .portfolio__circle {
     width: 330px;
     height: 330px;
+    margin: 0;
   }
 
   .portfolio__circle-progect {

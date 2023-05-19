@@ -5,13 +5,15 @@
 
 .profitable__info {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 11px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .profitable__item {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 10px;
   background: #1e2044;
   border: 1px solid #3d3f5e;
@@ -21,6 +23,7 @@
 .profitable__data {
   display: flex;
   align-items: center;
+  margin-left: 20px;
 }
 
 .profitable__data-img {
@@ -32,6 +35,7 @@
 }
 
 .profitable__project {
+  font-size: 12px;
   display: flex;
   align-items: center;
 }
@@ -41,6 +45,8 @@
 }
 
 .profitable__investors {
+  width: 100px;
+  margin-right: 20px;
   display: flex;
   align-items: center;
 }
@@ -51,6 +57,7 @@
 
 .profitable__roi {
   display: flex;
+  margin-right: 10px;
   align-items: center;
 }
 
@@ -64,6 +71,7 @@
 
 .profitable__net {
   display: flex;
+  margin-right: 45px;
   align-items: center;
 }
 
@@ -75,8 +83,13 @@
   margin-right: 10px;
 }
 
+.profitable__funded {
+margin-right: 25px;
+}
+
 .profitable__funded-text {
   margin: 15px 0 10px 0;
+  font-size: 14px;
   color: #43fcff;
 }
 .profitable__funded-text-red {
@@ -120,6 +133,45 @@
   color: #fa544d;
 }
 
+@media (min-width: 2400px) { 
+
+  .profitable__info {
+    font-size: 16px;
+  }
+  .profitable__data-text {
+    font-size: 20px;
+  }
+
+  .profitable__project {
+    font-size: 20px;
+  }
+
+  .profitable__investors {
+    font-size: 20px;
+  }
+
+  .profitable__funded-text {
+    margin: 39px 0 10px 0;
+    font-size: 20px;
+  }
+
+  .profitable__roi-text {
+    font-size: 20px;
+  }
+
+  .profitable__net {
+    margin-right: 50px;
+  }
+
+  .profitable__net-text {
+    font-size: 20px;
+  }
+
+  .profitable__funded-line {
+    width: 270px;
+  }
+}
+
 @media (min-width: 2000px) {
   .profitable__data-img {
     width: 30px;
@@ -142,9 +194,15 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .profitable__info {
     font-size: 9px;
+    margin-left: 67px;
+    margin-right: 35px;
+  }
+
+  .profitable__funded {
+    margin: 0;
   }
 
   .profitable__item {
@@ -153,6 +211,14 @@
 
   .profitable__data-text {
     width: 80px;
+  }
+
+  .profitable__net {
+    margin-right: 25px;
+  }
+
+  .profitable__investors {
+    width: 70px;
   }
 
   .profitable__investors {
@@ -169,7 +235,7 @@
   }
 
   .profitable__info {
-    width: 1060px;
+    width: 916px;
   }
 
   .profitable__scroll {

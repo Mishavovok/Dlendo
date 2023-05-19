@@ -60,7 +60,7 @@ export const data = {
       borderColor: '#43fcff',
       backgroundColor: '#FA544D',
       borderWidth: 1.5,
-      pointRadius: 3,
+      pointRadius: 4,
       fontSize: 100,
       fill: false,
       data: [1000, 600, 800, 400, 800, 1000, 1000, 600, 800, 400, 500, 600],
