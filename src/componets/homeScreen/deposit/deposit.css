@@ -210,6 +210,10 @@
     width: 30px;
   }
 
+  .deposit__item-amount {
+    width: 115px;
+  }
+
   .deposit__item-amount-img {
     width: 30px;
   }

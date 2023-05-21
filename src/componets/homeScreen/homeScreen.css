@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 0.6fr 1fr 1fr 1fr;
   grid-template-rows: 0fr 0fr;
-  gap: 10px 17px;
+  gap: 10px 5px;
   grid-template-areas:
     'homeScreen__nav homeScreen__investors homeScreen__portfolio homeScreen__interest'
     'homeScreen__nav homeScreen__deposit homeScreen__deposit homeScreen__deposit';
@@ -24,6 +24,12 @@
   margin-right: 20px;
   grid-area: homeScreen__deposit;
 }
+
+@media (min-width: 2400px) {
+  .homeScreen {
+    gap: 10px 17px;
+  }
+} 
 
 @media (max-width: 1024px) {
   .homeScreen {

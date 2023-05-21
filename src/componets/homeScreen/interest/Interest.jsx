@@ -13,9 +13,10 @@ import './interesr.css';
 import arrowmoney from '../../../assets/arrowmoney.png';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip);
-
+// ChartJS.defaults.font.size = 9;
 export const options = {
   responsive: true,
+
   scales: {
     y: {
       min: 0,
@@ -27,16 +28,20 @@ export const options = {
         color: '#43fcff',
         callback: (value) => value + '%',
         font: {
+          family: 'Montserrat',
           fontweight: 100,
         },
       },
     },
     x: {
       ticks: {
+        autoSkip: false,
+        // maxRotation: 0,
+        // minRotation: 0,
         color: '#43fcff',
         font: {
           family: 'Montserrat',
-          fontweight: 100,
+          fontweight: 400,
         },
       },
     },

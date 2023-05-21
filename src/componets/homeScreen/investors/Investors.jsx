@@ -27,25 +27,32 @@ ChartJS.register(
 
 const labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
+ChartJS.defaults.font.size = 9;
 const options = {
   scales: {
     x: {
       ticks: {
         autoSkip: false,
+        maxRotation: 0,
+        minRotation: 0,
         color: '#43fcff',
         font: {
+          // size:  window.innerWidth > 1300 ? 10:20,
           family: 'Montserrat',
-          fontweight: 100,
-          // size: 11,
+          fontweight: 400,
         },
       },
     },
     y: {
-      font: {
-        weight: 200,
-      },
+      min: 200,
+      max: 1000,
       ticks: {
         color: '#43fcff',
+        stepSize: 200,
+        font: {
+          family: 'Montserrat',
+          fontweight: 400,
+        },
       },
     },
   },
@@ -53,6 +60,7 @@ const options = {
 
 export const data = {
   labels,
+
   datasets: [
     {
       type: 'line',
@@ -61,9 +69,8 @@ export const data = {
       backgroundColor: '#FA544D',
       borderWidth: 1.5,
       pointRadius: 4,
-      fontSize: 100,
       fill: false,
-      data: [1000, 600, 800, 400, 800, 1000, 1000, 600, 800, 400, 500, 600],
+      data: [950, 600, 800, 400, 800, 950, 950, 600, 800, 400, 500, 600],
     },
     {
       type: 'bar',
@@ -73,18 +80,34 @@ export const data = {
       borderRadius: 20,
       borderColor: 'white',
       borderWidth: 1,
-      size: 10,
-      data: [1000, 600, 800, 400, 800, 1000, 1000, 600, 800, 400, 500, 600],
+
+      data: [950, 600, 800, 400, 800, 950, 950, 600, 800, 400, 500, 600],
     },
   ],
 };
 function Investors() {
+  function responsiveFont() {
+    if (window.outerWidth > 2400) {
+      ChartJS.defaults.font.size = 18;
+    }
+    if (window.outerWidth < 2400 && window.outerWidth > 1899) {
+      ChartJS.defaults.font.size = 13;
+    }
+
+    if (window.outerWidth < 1899 && window.outerWidth > 1400) {
+      ChartJS.defaults.font.size = 9;
+    }
+    if (window.outerWidth < 1400 && window.outerWidth > 989) {
+      ChartJS.defaults.font.size = 8;
+    }
+  }
+
   return (
     <div className="investors">
       <h1 className="investors__title">Investors</h1>
       <p className="investors__text">Total active investors by month</p>
-      <div className="investors__background">
-        <Chart type="bar" options={options} data={data} />
+      <div  className="investors__background">
+        <Chart onResize={responsiveFont()} type="bar" options={options} data={data} />
         <div className="investors__background-item">
           <button className="background__item-time">
             <p className="background__item-time-text">Daily</p>
