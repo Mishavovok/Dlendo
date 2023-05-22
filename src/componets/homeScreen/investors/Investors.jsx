@@ -93,8 +93,13 @@ function Investors() {
     if (window.outerWidth < 2400 && window.outerWidth > 1899) {
       ChartJS.defaults.font.size = 13;
     }
-
-    if (window.outerWidth < 1899 && window.outerWidth > 1400) {
+    if (window.outerWidth < 1899 && window.outerWidth > 1799) {
+      ChartJS.defaults.font.size = 12;
+    }
+    if (window.outerWidth < 1799 && window.outerWidth > 1699) {
+      ChartJS.defaults.font.size = 10;
+    }
+    if (window.outerWidth < 1699 && window.outerWidth > 1400) {
       ChartJS.defaults.font.size = 9;
     }
     if (window.outerWidth < 1400 && window.outerWidth > 989) {

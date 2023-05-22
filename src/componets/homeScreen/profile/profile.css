@@ -58,7 +58,11 @@
   color: #ffffff;
 }
 
-
+@media (min-width: 1800px) {
+  .profile {
+    width: 270px;
+  }
+}
 
 
 

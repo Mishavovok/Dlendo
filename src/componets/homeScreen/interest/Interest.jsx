@@ -35,6 +35,8 @@ export const options = {
     },
     x: {
       ticks: {
+        maxRotation: 0,
+        minRotation: 0,
         autoSkip: false,
         // maxRotation: 0,
         // minRotation: 0,

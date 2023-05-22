@@ -73,6 +73,21 @@
   margin-left: 20px;
 }
 
+@media (min-width: 1800px) {
+  .nav {
+    width: 280px;
+  }
+  .nav__panel {
+    margin-left: 30px;
+  }
+  .nav__link {
+    margin-left: 40px;
+  }
+  .nav__link:hover {
+    width: 235px;
+  }
+}
+
 @media (min-width: 2000px) {
   .nav {
     width: 325px;
