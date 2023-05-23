@@ -87,7 +87,7 @@ function Profile() {
         </span>
       </div>
       <div className="profile__user">
-        <img src={user} alt="" />
+        <img className='profile__user-img' src={user} alt="" />
         <h4 className="profile__user-name">Misha Vovk</h4>
       </div>
       <div className="profile__balance">

@@ -1,7 +1,8 @@
 .profile {
-  width: 240px;
+  width: 270px;
   border-radius: 5px;
   background: #090b32;
+  margin-bottom: 30px;
 }
 
 .profile__user {
@@ -22,16 +23,16 @@
   background: #19163f;
   margin-right: 10px;
   border-radius: 0px 0px 10px 10px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.profile__options-img:hover{
+.profile__options-img:hover {
   background: #fa544d;
 }
 
 .profile__options-img:hover svg path {
   fill: rgb(255, 255, 255);
-  }
+}
 
 .profile__user-name {
   margin-left: 20px;
@@ -64,12 +65,11 @@
   }
 }
 
-
-
 @media (min-width: 2000px) {
   .profile {
     width: 310px;
-  }  
+  }
+  
 
   .profile__options {
     margin-left: 140px;
@@ -92,7 +92,45 @@
     font-size: 18px;
     font-weight: 400;
   }
+}
 
+@media (min-width: 2400px) {
+  .profile {
+    width: 370px;
+  }
+
+  .profile__options {
+    margin-left: 180px;
+  }
+
+  .profile__options-img {
+    width: 30px;
+  }
+  .profile__options-img svg {
+    width: 30px;
+    height: 30px;
+  }
+  .profile__user {
+    margin-left: 35px;
+  }
+
+  .profile__user-img {
+    width: 45px;
+  }
+
+  .profile__user-name {
+    font-size: 22px;
+  }
+
+  .profile__balance__item-img {
+    width: 30px;
+  }
+  .profile__balance__item-balance {
+    font-size: 22px;
+  }
+  .profile__balance__item-number {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -116,13 +154,12 @@
     font-size: 14px;
   }
 
-  @media (max-width: 420px) { 
+  @media (max-width: 420px) {
     .profile {
       width: 200px;
-    } 
-    .profile__options  {
+    }
+    .profile__options {
       margin-left: 45px;
     }
-
   }
 }

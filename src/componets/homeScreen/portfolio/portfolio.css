@@ -1,10 +1,10 @@
 .portfolio__circle {
-  width: 180px;
+  width: 150px;
 }
 .portfolio__circle-progect {
   position: absolute;
-  left: 80px;
-  top: 99px;
+  left: 66px;
+  top: 85px;
 }
 
 .portfolio__circle-progect-color {
@@ -33,7 +33,8 @@
 }
 
 .portfolio__info {
-  width: 345px;
+  width: 315px;
+  height: 205px;
   padding: 10px;
   position: relative;
   display: flex;
@@ -154,6 +155,7 @@
 @media (min-width: 1800px) {
   .portfolio__info {
     width: 450px;
+    height: 280px;
   }
   .portfolio__circle {
     width: 230px;
@@ -204,6 +206,7 @@
 @media (min-width: 1900px) {
   .portfolio__info {
     width: 470px;
+    height: 290px;
   }
   .portfolio__info__item-text-1 {
     font-size: 20px;
@@ -256,6 +259,7 @@
 @media (min-width: 2000px) {
   .portfolio__info {
     width: 500px;
+    height: 300px;
   }
 
   .portfolio__info__item-text-1 {
@@ -479,6 +483,9 @@
 @media (max-width: 866px) {
   .portfolio {
     margin-left: 60px;
+  }
+  .portfolio__info { 
+    height: 240px;
   }
 }
 

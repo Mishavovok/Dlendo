@@ -163,6 +163,37 @@
   width: 20px;
 }
 
+@media (min-width: 2000px) {
+  .deposit__item-data-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .deposit__item-user-img {
+    width: 30px;
+  }
+
+  .deposit__item-amount {
+    width: 115px;
+  }
+
+  .deposit__item-amount-img {
+    width: 30px;
+  }
+
+  .deposit__item-crypto-img {
+    width: 30px;
+  }
+
+  .deposit__item-transaction-img {
+    width: 20px;
+    height: 20px;
+  }
+  .deposit__item-transaction-img {
+    width: 25px;
+  }
+}
+
 @media (min-width: 2400px) {
   .deposit__info {
     font-size: 16px;
@@ -197,37 +228,6 @@
 
   .deposit__item-transaction-text {
     font-size: 20px;
-  }
-}
-
-@media (min-width: 2000px) {
-  .deposit__item-data-img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .deposit__item-user-img {
-    width: 30px;
-  }
-
-  .deposit__item-amount {
-    width: 115px;
-  }
-
-  .deposit__item-amount-img {
-    width: 30px;
-  }
-
-  .deposit__item-crypto-img {
-    width: 30px;
-  }
-
-  .deposit__item-transaction-img {
-    width: 20px;
-    height: 20px;
-  }
-  .deposit__item-transaction-img {
-    width: 25px;
   }
 }
 

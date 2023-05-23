@@ -8,7 +8,8 @@
 }
 
 .investors__background {
-  width: 343px;
+  width: 320px;
+  height: 215px;
   padding: 5px;
   background: #19163f;
   border: 1px solid #3d3f5e;
@@ -45,6 +46,7 @@
   .investors__background {
     width: 390px;
     padding: 10px;
+    height: 235px;
   }
  }
 
@@ -52,6 +54,7 @@
   .investors__background {
     width: 390px;
     padding: 10px;
+    height: 235px;
   }
  }
 
@@ -59,6 +62,7 @@
   .investors__background {
     width: 450px;
     padding: 10px;
+    height: 280px;
   }
   .background__item-time {
     margin-top: 15px;
@@ -69,6 +73,7 @@
   .investors__background {
     width: 470px;
     padding: 10px;
+    height: 290px;
   }
   .background__item-time {
     margin-top: 15px;
@@ -79,6 +84,7 @@
 @media (min-width: 2000px) {
   .investors__background {
     width: 500px;
+    height: 300px;
   }
 
   .background__item-time {
@@ -101,6 +107,7 @@
 @media (min-width: 2400px) {
   .investors__background {
     width: 600px;
+    height: 370px;
   }
 
   .background__item-time {
@@ -122,6 +129,7 @@
   .investors__background {
     width: 282px;
     padding: 10px;
+    height: 205px;
   }
   .background__item-time {
     padding: 4px 5px;
@@ -134,6 +142,7 @@
   }
   .investors__background {
     width: 370px;
+    height: 240px;
   }
 }
 
@@ -143,6 +152,7 @@
   }
   .investors__background {
     width: 442px;
+    height: 270px;
   }
 }
 
