@@ -13,10 +13,37 @@ import './interesr.css';
 import arrowmoney from '../../../assets/arrowmoney.png';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip);
-// ChartJS.defaults.font.size = 9;
+
 export const options = {
   responsive: true,
-
+  plugins: {
+    tooltip: {
+      bodyFont: {
+        size:15,
+      },
+      titleFont: {
+        family:"Montserrat",
+        size:14,
+        weight: 'normal',
+      },
+      titleColor: '#8186AF',
+      backgroundColor: '#090B32',
+      pointRadius:10,
+      usePointStyle: true,
+      boxWidth: 30,
+      boxHeight:20,
+      borderWidth:1,
+      callbacks: {
+        label: function (context) {
+          let label = context.dataset.label || '';
+          if (context.parsed.y !== null) {
+            label += ' ' + context.parsed.y + '%';
+          }
+          return label;
+        },
+      },
+    },
+  },
   scales: {
     y: {
       min: 0,
@@ -64,7 +91,6 @@ export const data = {
   labels,
   datasets: [
     {
-      label: 'Dataset',
       data: [3, 4, 3, 4, 5, 4.5, 4.5, 5.5, 4, 5, 3.5, 4.5],
       borderColor: '#43fcff',
       backgroundColor: '#FA544D',

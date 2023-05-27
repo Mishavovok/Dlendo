@@ -42,16 +42,16 @@
 .profile__balance-item {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   margin-left: 25px;
 }
 
 .profile__balance__item-img {
   width: 18px;
+  margin-right: 10px;
 }
 
 .profile__balance__item-balance {
-  margin-right: 40px;
+  margin-right: 65px;
 }
 
 .profile__balance__item-number {
@@ -69,7 +69,6 @@
   .profile {
     width: 310px;
   }
-  
 
   .profile__options {
     margin-left: 140px;
@@ -86,6 +85,7 @@
 
   .profile__balance__item-balance {
     font-size: 18px;
+    margin-right: 80px;
   }
 
   .profile__balance__item-number {
@@ -127,6 +127,7 @@
   }
   .profile__balance__item-balance {
     font-size: 22px;
+    margin-right: 100px;
   }
   .profile__balance__item-number {
     font-size: 22px;
@@ -135,7 +136,7 @@
 
 @media (max-width: 1300px) {
   .profile {
-    width: 190px;
+    width: 230px;
   }
 
   .profile__options {
@@ -147,19 +148,35 @@
   }
 
   .profile__balance__item-balance {
-    margin-right: 20px;
+    margin-right: 50px;
   }
 
   .profile__balance__item-number {
     font-size: 14px;
   }
+}
 
-  @media (max-width: 420px) {
-    .profile {
-      width: 200px;
-    }
-    .profile__options {
-      margin-left: 45px;
-    }
+@media (max-width: 1024px) {
+  .profile {
+    width: 270px;
+  }
+  .profile__options {
+    margin-left: 115px;
+  }
+  .profile__options-img svg {
+    width: 23px;
+    height: 23px;
+  }
+  .profile__balance__item-balance {
+    margin-right: 75px;
+  }
+}
+
+@media (max-width: 420px) {
+  .profile {
+    width: 260px;
+  }
+  .profile__options {
+    margin-left: 100px;
   }
 }

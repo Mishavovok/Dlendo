@@ -29,6 +29,39 @@ const labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', '
 
 ChartJS.defaults.font.size = 9;
 const options = {
+  plugins: {
+    tooltip: {
+      bodyFont: {
+        size:15,
+      },
+      titleFont: {
+        family:"Montserrat",
+        size:14,
+        weight: 'normal',
+      },
+      pointRadius:10,
+      usePointStyle: true,
+      boxWidth: 30,
+      boxHeight:20,
+      borderWidth:1,
+      titleColor: '#8186AF',
+      backgroundColor: '#090B32',
+      callbacks: {
+        label: function (context) {
+          let label = context.dataset.label || '';
+          if (label) {
+            label += ': ';
+          }
+          if (context.parsed.y !== null) {
+            label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(
+              context.parsed.y,
+            );
+          }
+          return label;
+        },
+      },
+    },
+  },
   scales: {
     x: {
       ticks: {
@@ -64,7 +97,7 @@ export const data = {
   datasets: [
     {
       type: 'line',
-      label: 'Dataset 1',
+      label: '',
       borderColor: '#43fcff',
       backgroundColor: '#FA544D',
       borderWidth: 1.5,
@@ -74,7 +107,6 @@ export const data = {
     },
     {
       type: 'bar',
-      label: 'Dataset 2',
       backgroundColor: '#43fcff',
       barThickness: 7,
       borderRadius: 20,
@@ -111,7 +143,7 @@ function Investors() {
     <div className="investors">
       <h1 className="investors__title">Investors</h1>
       <p className="investors__text">Total active investors by month</p>
-      <div  className="investors__background">
+      <div className="investors__background">
         <Chart onResize={responsiveFont()} type="bar" options={options} data={data} />
         <div className="investors__background-item">
           <button className="background__item-time">
