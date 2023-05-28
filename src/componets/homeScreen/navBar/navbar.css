@@ -30,12 +30,16 @@
 
 .nav__link {
   font-size: 14px;
-  width: 220px;
+  width: 240px;
+  height: 40px;
+  padding: 0;
   display: flex;
   font-weight: 400;
   margin-left: 30px;
   align-items: center;
   margin-bottom: 15px;
+  transition: all .1s;
+  border: 1px solid #ffffff00;
 }
 
 .nav__link:hover {
@@ -48,6 +52,7 @@
   color: #ffffff;
   border-radius: 10px;
   border: 1px solid #ffffff;
+  
 }
 /* .nav__link-active {
   font-weight: 700;
@@ -116,6 +121,7 @@
   .nav__link {
     font-size: 21px;
     width: 300px;
+    margin-bottom: 21px;
   }
 
   .nav__panel {
@@ -265,6 +271,18 @@
   .nav {
     height: 660%;
   }
+
+  .nav__pane {
+    margin-left: 30px;
+  }
+
+  .nav__link {
+    margin-left: 40px;
+  } 
+
+  .nav__link:hover {
+    width: 235px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -274,17 +292,15 @@
   }
 
   .nav__link:hover {
-    width: 235px;
+    width: 225px;
     font-size: 13px;
   }
-  .profile__balance-item {
-    margin-left: 15px;
-  }
+ 
   .nav__link {
     width: 220px;
-    margin-left: 25px;
+    margin-left: 40px;
   }
   .nav__panel {
-    margin-left: 15px;
+    margin-left: 30px;
   }
 }

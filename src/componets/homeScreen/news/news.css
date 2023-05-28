@@ -255,7 +255,8 @@
 
 @media (max-width: 420px) {
   .news {
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .news__title__search-input {

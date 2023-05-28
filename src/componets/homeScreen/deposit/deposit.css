@@ -279,14 +279,15 @@
 
 @media (max-width: 420px) {
   .deposit {
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .deposit__background {
-    width: 380px;
+    width: 358px;
   }
 
   .deposit__scroll {
-    width: 380px;
+    width: 358px;
   }
   .deposit__latest {
     margin-right: 5px;

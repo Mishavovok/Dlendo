@@ -263,13 +263,14 @@ margin-right: 25px;
 
 @media (max-width: 420px) {
   .profitable {
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .profitable__background {
-    width: 380px;
+    width: 358px;
   }
   .profitable__scroll {
-    width: 380px;
+    width: 358px;
   }
 
   .profitable__page-number {

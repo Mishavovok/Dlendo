@@ -172,9 +172,23 @@
   }
 }
 
+@media (max-width: 700px) {
+  .profile__balance-item {
+    margin-left: 30px;
+  }
+}
+
 @media (max-width: 420px) {
   .profile {
     width: 260px;
+  }
+
+  .profile__balance__item-balance{
+    margin-right: 60px;
+  }
+
+  .profile__balance-item {
+    margin-left: 30px;
   }
   .profile__options {
     margin-left: 100px;

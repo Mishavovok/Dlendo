@@ -7,7 +7,11 @@ import './portfolio.css';
 ChartJS.register(ArcElement, Tooltip);
 const options = {
   cutout: [10, 75, 60, 50],
- 
+  plugins: {
+    tooltip: {
+      
+    }
+  }
 };
 export const data = {
   labels: [],

@@ -11,7 +11,7 @@ function Profile() {
         <span className="profile__options-img">
           <svg
             width="23"
-            height="22"
+            height="23"
             viewBox="0 0 23 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -45,8 +45,8 @@ function Profile() {
         </span>
         <span className="profile__options-img">
           <svg
-            width="18"
-            height="18"
+            width="23"
+            height="23"
             viewBox="0 0 18 18"
             fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -62,8 +62,8 @@ function Profile() {
         </span>
         <span className="profile__options-img">
           <svg
-            width="21"
-            height="21"
+            width="23"
+            height="23"
             viewBox="0 0 21 21"
             fill="none"
             xmlns="http://www.w3.org/2000/svg">

@@ -1,3 +1,7 @@
+.portfolio {
+  z-index: 0;
+}
+
 .portfolio__circle {
   width: 150px;
 }
@@ -484,7 +488,7 @@
   .portfolio {
     margin-left: 60px;
   }
-  .portfolio__info { 
+  .portfolio__info {
     height: 240px;
   }
 }
@@ -542,12 +546,17 @@
 
 @media (max-width: 420px) {
   .portfolio {
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .portfolio__info {
-    width: 360px;
+    width: 338px;
   }
 
+  .portfolio__info__item-color-block {
+    width: 13px;
+    height: 13px;
+  }
   .portfolio__circle {
     width: 150px;
     height: 150px;
