@@ -103,7 +103,7 @@ export const data = {
 function Interest() {
   return (
     <div className="interest">
-      <h1 className="interest__title">Interesr</h1>
+      <h1 className="interest__title">Interest</h1>
       <p className="interest__text">Average interest by all projects</p>
       <div className="interest__background">
         <Line options={options} data={data} />

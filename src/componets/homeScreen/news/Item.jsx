@@ -2,6 +2,7 @@ import React from 'react';
 import news from '../../../assets/news.png';
 import views from '../../../assets/views.png';
 import calendar from '../../../assets/calendar.png';
+
 import './news.css';
 
 function Item() {

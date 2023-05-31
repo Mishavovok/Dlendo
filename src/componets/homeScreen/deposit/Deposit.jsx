@@ -3,6 +3,7 @@ import ItemUser from './ItemUser';
 import './deposit.css';
 import left from '../../../assets/left-arrow.png';
 import right from '../../../assets/right-arrow.png';
+import Skeleton from "./Skeleton"
 
 function Deposit() {
   const [items, setItems] = useState([]);
@@ -13,6 +14,15 @@ function Deposit() {
       })
       .then((arr) => {
         setItems(arr);
+      });
+  }, []);
+  useEffect(() => {
+    fetch('http://localhost:3000/media')
+      .then((res) => {
+        return res.json();
+      })
+      .then((arr) => {
+        console.log(arr)
       });
   }, []);
 

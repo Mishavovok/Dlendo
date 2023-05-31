@@ -23,17 +23,17 @@ function News() {
         </div>
       </div>
       <div className="news__info">
-        <Item />
-        <Item />
-        <Item />
+    <Item />
+    <Item />
+    <Item />
 
-        <Item />
-        <Item />
-        <Item />
+    <Item />
+    <Item />
+    <Item />
 
-        <Item />
-        <Item />
-        <Item />
+    <Item />
+    <Item />
+    <Item />
       </div>
     </div>
   );
